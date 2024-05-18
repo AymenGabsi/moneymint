@@ -50,7 +50,6 @@ export const signIn = async ({ email, password }: signInProps) => {
       secure: true,
     });
 
-    //const response = await account.createEmailPasswordSession(email, password);
     const user = await getUserInfo({ userId: session.userId }) 
 
     return parseStringify(user);

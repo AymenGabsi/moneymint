@@ -11,6 +11,7 @@ import {
   exchangePublicToken,
 } from "@/lib/actions/user.actions";
 import Image from "next/image";
+import Link from "next/link";
 
 const PlaidLink = ({ user, variant }: PlaidLinkProps) => {
   const router = useRouter();
@@ -68,6 +69,18 @@ const PlaidLink = ({ user, variant }: PlaidLinkProps) => {
           />
           <p className="hiddenl text-[16px] font-semibold text-black-2 xl:block">
             Connect bank
+          </p>
+        </Button>
+      ) : variant === "addBankFromHomePage" ? (
+        <Button onClick={() => open()} className="plaidlink-default">
+          <Image
+            src="/icons/plus.svg"
+            alt="connect bank"
+            width={24}
+            height={24}
+          />
+          <p className="hiddenl text-[16px] font-semibold text-black-2 xl:block">
+            Add Bank
           </p>
         </Button>
       ) : (

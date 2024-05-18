@@ -10,7 +10,7 @@ const Home = async ({ searchParams: { id, page } }: SearchParamProps) => {
 
   const loggedIn = await getLoggedInUser();
   const accounts = await getAccounts({
-    userId: loggedIn.$id,
+    userId: loggedIn?.$id,
   });
 
   //! if we don't return accounts, we just exit and we don't render this page ...

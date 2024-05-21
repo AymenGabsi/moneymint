@@ -1633,6 +1633,6 @@ export const Category = ({ category }: CategoryProps) => {
 ## <a name="links">🔗 Links</a>
 
 **Plaid website : https://plaid.com/** \
-**Dwolla website : https://www.dwolla.com/**\
-**Shadcn website : https://ui.shadcn.com/**\
-**ChatJs website : https://www.chartjs.org/**\
+**Dwolla website : https://www.dwolla.com/** \
+**Shadcn website : https://ui.shadcn.com/** \
+**ChatJs website : https://www.chartjs.org/** \
